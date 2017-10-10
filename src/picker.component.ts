@@ -1410,6 +1410,7 @@ export class DateTimePickerComponent implements OnInit, OnDestroy, ControlValueA
     private setSelectedTime( val: Date ): boolean {
         let done;
         let selected;
+		const event = event || window.event;
 
         if (this.isSingleSelection()) {
             selected = this.setTimeOnSingleSelection(val);
